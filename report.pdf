@@ -1,0 +1,91 @@
+Credit Card Fraud Detection using Machine Learning
+1. Introduction
+
+Fraud detection is one of the most important applications of Machine Learning in the financial sector. The objective of this project is to build a classification model capable of identifying fraudulent credit card transactions.
+
+2. Dataset Description
+
+The dataset contains credit card transactions with 31 columns:
+
+Time
+V1 to V28
+Amount
+Class
+
+The target variable is:
+
+Class = 0 (Normal)
+Class = 1 (Fraud)
+
+The dataset is highly imbalanced because fraudulent transactions represent only a small fraction of all transactions.
+
+3. Data Cleaning
+
+The following preprocessing steps were performed:
+
+Checked for missing values.
+Removed duplicate records.
+Verified dataset consistency.
+
+No missing values were found in the dataset.
+
+4. Exploratory Data Analysis (EDA)
+
+EDA was performed to understand:
+
+Class distribution.
+Feature relationships.
+Correlation matrix.
+
+The analysis revealed a severe class imbalance.
+
+5. Data Preprocessing
+
+The following preprocessing steps were applied:
+
+Feature scaling using StandardScaler.
+Train-test split (80%-20%).
+SMOTE for balancing the minority class.
+6. Machine Learning Models
+
+Two models were trained:
+
+Logistic Regression
+
+A baseline linear classification model.
+
+Random Forest
+
+An ensemble learning model capable of capturing complex patterns.
+
+Hyperparameter tuning was performed using GridSearchCV.
+
+7. Evaluation Metrics
+
+The following metrics were used:
+
+Precision
+Recall
+ROC-AUC Score
+Confusion Matrix
+
+Accuracy was avoided because the dataset is highly imbalanced.
+
+8. Results
+Model	Precision	Recall	ROC-AUC
+Logistic Regression	0.053	0.874	0.963
+Random Forest	0.911	0.758	0.973
+
+The Random Forest model achieved superior performance.
+
+9. Conclusion
+
+This project successfully developed a fraud detection system using Machine Learning techniques.
+
+The Random Forest model was selected as the best-performing model due to its high precision and excellent ROC-AUC score.
+
+Future improvements may include:
+
+Deep Learning approaches
+Real-time fraud detection systems
+Feature engineering enhancements
